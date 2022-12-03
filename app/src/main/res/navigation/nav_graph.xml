@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.classreminder.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.classreminder.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment2_to_unitsFragment2"
+            app:destination="@id/unitsFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_attendanceFragment"
+            app:destination="@id/attendanceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/unitsFragment2"
+        android:name="com.example.classreminder.fragments.UnitsFragment"
+        android:label="fragment_units"
+        tools:layout="@layout/fragment_units" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.classreminder.fragments.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_localNotification"
+            app:destination="@id/localNotification" />
+    </fragment>
+    <fragment
+        android:id="@+id/localNotification"
+        android:name="com.example.classreminder.fragments.LocalNotification"
+        android:label="fragment_local_notification"
+        tools:layout="@layout/fragment_local_notification" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.example.classreminder.fragments.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" />
+</navigation>

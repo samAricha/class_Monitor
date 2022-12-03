@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386775921783",
+    "project_id": "class-monitor-f7a2d",
+    "storage_bucket": "class-monitor-f7a2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386775921783:android:9319435d88662e04728272",
+        "android_client_info": {
+          "package_name": "com.example.classreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386775921783-o8ttcdouvclrr6djlln71ft1rp2f8udu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKl5oa1MW2ESEODay76LXLLtuHHBMxdbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386775921783-o8ttcdouvclrr6djlln71ft1rp2f8udu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
