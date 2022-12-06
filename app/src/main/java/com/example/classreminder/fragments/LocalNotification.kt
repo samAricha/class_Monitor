@@ -38,6 +38,8 @@ class LocalNotification : Fragment() {
 
         view.btnScheduleNotification.setOnClickListener {
             scheduleNotification()
+            findNavController().navigate(R.id.action_localNotification_to_scheduleFragment)
+
         }
 
         return view
